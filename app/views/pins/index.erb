@@ -1,0 +1,11 @@
+<h1>Heres yo pins</h1>
+
+<ul>
+  <% @pins.each do |pin| %>
+    <li>
+      <a href="/pins/<%= pin["id"] %>"><%= pin["title"] %></a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/pins/new">Add new pin</a>
